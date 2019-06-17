@@ -1,8 +1,10 @@
-name := "CodeGolf"
+ThisBuild / version := "1.0"
+ThisBuild / scalaVersion := "2.12.8"
 
-version := "1.0"
+val scalatest = "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+val scalatic = "org.scalactic" %% "scalactic" % "3.0.5"
 
-scalaVersion := "2.10.5"
-
-libraryDependencies += "org.scalatest" %% "scalatest" % "1.9.1" % "test"
-    
+lazy val root = (project in file(".")).settings(
+    name := "scala-code-golf",
+    libraryDependencies ++= List(scalatest, scalatic)
+  )

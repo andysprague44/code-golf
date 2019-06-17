@@ -1,9 +1,9 @@
 package com.andysprague.codegolf
 
 import org.scalatest.FunSuite
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.Matchers
 
-class IsItWholeNumberTest extends FunSuite with ShouldMatchers {
+class IsItWholeNumberTest extends FunSuite with Matchers {
 
   test("332 is whole") {
     IsItWholeNumber.f(332) should be (true)

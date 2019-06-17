@@ -1,9 +1,9 @@
 package com.andysprague.codegolf
 
 import org.scalatest.FunSuite
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.Matchers
 
-class ALPHABETalphabetTest extends FunSuite with ShouldMatchers {
+class ALPHABETalphabetTest extends FunSuite with Matchers {
 
   test("non letter works") {
     ALPHABETalphabet.f('1') should be ("1")

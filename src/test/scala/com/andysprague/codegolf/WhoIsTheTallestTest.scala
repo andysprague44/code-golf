@@ -1,9 +1,9 @@
 package com.andysprague.codegolf
 
 import org.scalatest.FunSuite
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.Matchers
 
-class WhoIsTheTallestTest extends FunSuite with ShouldMatchers {
+class WhoIsTheTallestTest extends FunSuite with Matchers {
 
   test("From (5,3,9,8,7), the tallest is 8") {
     val tallest = WhoIsTheTallest.f(List(5,3,9,8,7))

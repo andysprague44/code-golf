@@ -1,9 +1,9 @@
 package com.andysprague.codegolf
 
 import org.scalatest.FunSuite
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.Matchers
 
-class ImAPalindromeTest extends FunSuite with ShouldMatchers {
+class ImAPalindromeTest extends FunSuite with Matchers {
 
   test("Palindrome is true for 'abba'") {
     val isPalindrome = ImAPalindrome.isPalindrome("abba")

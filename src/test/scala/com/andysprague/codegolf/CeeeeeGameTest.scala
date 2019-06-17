@@ -1,9 +1,9 @@
 package com.andysprague.codegolf
 
-import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.Matchers
 import org.scalatest.FunSuite
 
-class CeeeeeGameTest extends FunSuite with ShouldMatchers {
+class CeeeeeGameTest extends FunSuite with Matchers {
 
   test("ceeeeGame works correctly for 'Test Cases, s'") {
     val c = new CeeeeeGame with MockOutput
